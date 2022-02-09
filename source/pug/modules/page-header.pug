@@ -1,0 +1,21 @@
+header.page-header
+  .container.page-header__container
+    a.page-header__logo(href=pageClass==="index-page" ? false: "index.html")
+      img(src="img/logo.svg" alt="Логотип G-RP Assistant" width="39" height="38")
+    nav.page-header__navigation
+      ul.page-header__list
+        li.page-header__item
+          a.page-header__link(href="#") Главная
+        li.page-header__item
+          a.page-header__link(href="#") Команды
+        li.page-header__item
+          a.page-header__link(href="#") Общий рейтинг
+        li.page-header__item
+          a.page-header__link(href="#") Услуги
+        li.page-header__item
+          a.page-header__link(href="#") Помощь
+    button.page-header__button-theme
+      svg.page-header__svg(width="15" height="16" viewBox="0 0 15 16")
+        use(xlink:href="img/sprite.svg#icon-moon")
+
+    a.page-header__entry(href="#") Вход/Регистрация
