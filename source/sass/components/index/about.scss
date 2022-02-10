@@ -1,0 +1,29 @@
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 83%;
+  margin: 0 auto;
+}
+
+.about__heading {
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 55px;
+  color: $black;
+  margin-bottom: 16px;
+}
+
+.about__content {
+  width: 41%;
+}
+
+.about__paragraph {
+  width: 92%;
+}
+
+.about__container {
+  display: grid;
+  gap: 128px;
+  padding: 94px 0;
+}

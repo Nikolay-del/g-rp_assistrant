@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-.page {
+html {
   height: 100%;
 }
 
@@ -33,4 +33,28 @@ img {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   color: $black;
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    padding: 0 30px;
+  }
 }
