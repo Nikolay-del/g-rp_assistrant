@@ -9,7 +9,9 @@ html(lang="ru")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="css/style.min.css")
     title #{title}
-  body.page__body
+  body.page__body.page__body--blackout
     include ../modules/page-header.pug
     block content
     include ../modules/page-footer.pug
+    include ../modules/popup-entrance.pug
+    script(src="js/modal.js")

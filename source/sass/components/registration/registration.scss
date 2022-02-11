@@ -75,8 +75,7 @@
 
 .registration__item {
   position: relative;
-  display: flex;
-  align-items: center;
+
 
   &::before {
     content: "";
@@ -88,25 +87,25 @@
   }
 
   &--login::before {
-    background-image: url("../img/registration/icon-login.svg");
+    background-image: url("../img/icons/icon-login.svg");
     width: 14px;
     height: 14px;
   }
 
   &--email::before {
-    background-image: url("../img/registration/icon-mail.svg");
+    background-image: url("../img/icons/icon-mail.svg");
     width: 14px;
     height: 11px;
   }
 
   &--vk::before {
-    background-image: url("../img/registration/icon-vk.svg");
+    background-image: url("../img/icons/icon-vk.svg");
     width: 16px;
     height: 16px;
   }
 
   &--password::before {
-    background-image: url("../img/registration/icon-password.svg");
+    background-image: url("../img/icons/icon-password.svg");
     width: 13.5px;
     height: 13.5px;
   }

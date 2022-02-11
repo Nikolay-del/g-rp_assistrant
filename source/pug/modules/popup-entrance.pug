@@ -1,0 +1,24 @@
+.modal-entrance
+  .modal
+    .modal-entrance__container
+      .modal-entrance__illustration
+        svg(width="358" height="358" viewBox="0 0 358 358")
+          use(xlink:href="img/sprite.svg#etrance-illustration")
+      .modal-entrance__wrapper
+        h2.modal-entrance__heading Авторизация
+        a.modal-entrance__link-vk Войти через ВКонтакте
+        p.modal-entrance__or Или
+        form.modal-entrance__form(action="")
+          ul.modal-entrance__list
+            li.modal-entrance__item.modal-entrance__item--email
+              input.modal-entrance__input#email(type="email" name="email" placeholder="Почта")
+            li.modal-entrance__item.modal-entrance__item--password
+              input.modal-entrance__input#password(type="password" name="password" placeholder="Пароль")
+            li.modal-entrance__item
+              button.modal-entrance__button(type='submit') Войти
+        a.modal-entrance__link.modal-entrance__link--forgot(href="#")  Забыли пароль?
+        p.modal-entrance__no-account Нет аккаунта?
+          a.modal-entrance__link(href="registration.html")  Зарегистрируйтесь!
+      button(type="button").modal-entrance__close
+        svg(width="12" height="12" viewBox="0 0 12 12")
+          use(xlink:href="img/sprite.svg#close")
