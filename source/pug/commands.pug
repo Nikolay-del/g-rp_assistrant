@@ -1,0 +1,9 @@
+extends layout/main
+
+block variables
+  - var pageClass = "commands-page"
+  - var title = "Команды. G-RP Assistant"
+
+block content
+  main(class=pageClass)
+    include pages/commands/commands.pug

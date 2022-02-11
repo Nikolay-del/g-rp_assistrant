@@ -25,3 +25,4 @@ closeButton.addEventListener("click", function (evt) {
   popup.classList.remove("modal--show");
   modalFade.classList.remove("modal-blackout");
 });
+
