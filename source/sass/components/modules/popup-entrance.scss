@@ -148,6 +148,11 @@
   border-radius: 5px;
   padding: 15px 0;
   cursor: pointer;
+  transition: 0.3s background ease-in;
+
+  &:hover {
+    background: lighten($blue, 5%);
+  }
 }
 
 .modal-entrance__link {

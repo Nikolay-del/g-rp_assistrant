@@ -76,7 +76,6 @@
 .registration__item {
   position: relative;
 
-
   &::before {
     content: "";
     position: absolute;
@@ -121,6 +120,12 @@
   border-radius: 5px;
   border: none;
   margin-bottom: 27px;
+  cursor: pointer;
+  transition: 0.3s background ease-in;
+
+  &:hover {
+    background: lighten($blue, 5%);
+  }
 }
 
 .registration__cookie {

@@ -1,14 +1,16 @@
-const openButton = document.querySelector(".page-header__entry");
+const openButton = document.querySelectorAll(".button-entry");
 const popup = document.querySelector(".modal");
 const modalFade = document.querySelector(".modal-entrance");
 const closeButton = document.querySelector(".modal-entrance__close")
 
 
-openButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal--show");
-  modalFade.classList.add("modal-blackout");
-});
+for (let i = 0; i < openButton.length; i++) {
+  openButton[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal--show");
+    modalFade.classList.add("modal-blackout");
+  })
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -25,4 +27,3 @@ closeButton.addEventListener("click", function (evt) {
   popup.classList.remove("modal--show");
   modalFade.classList.remove("modal-blackout");
 });
-
